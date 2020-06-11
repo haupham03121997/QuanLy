@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Quản Lý Sinh Viên</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="display-4 text-center">Quản Lý Nhân Viên</h3>
+        <div class="form-group">
+            <p>Mã Sinh Viên:</p>
+            <input type="text" id="maSinhVien" class="form-control">
+        </div>
+        <div class="form-group">
+            <p>Tên Sinh Viên:</p>
+            <input type="text" id="tenSinhVien" class="form-control">
+        </div>
+        <div class="form-group">
+            <p>Loại Sinh Viên:</p>
+            <select name="" id="loaiSinhVien" class="form-control">
+               <option value="Khó Khăn">Khó Khăn</option>
+               <option value="Bình Thường">Bình Thường</option>
+               <option value="Giàu">Giàu </option>
+           </select>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-4">
+                    <input id="diemToan" placeholder="Điểm Toán">
+                </div>
+                <div class="col-4">
+                    <input id="diemLy" placeholder="Điểm Lý">
+                </div>
+                <div class="col-4">
+                    <input id="diemHoa" placeholder="Điểm Hóa">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <p>Điểm Rèn Luyện:</p>
+            <input type="text" id="diemRenLuyen" class="form-control">
+        </div>
+        <div class="text-center">
+            <button id="btnXacNhan" type="button" class="btn btn-outline-success">Xác Nhận</button>
+        </div>
+
+        <table class="table mt-5">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col">Mã Sinh Viên</th>
+                    <th scope="col">Tên Sinh Viên</th>
+                    <th scope="col">Loại Sinh Vien</th>
+                    <th scope="col">Điểm Trung Bình</th>
+                    <th scope="col">Điểm Rèn Luyện</th>
+                </tr>
+            </thead>
+            <tbody id="tbSinhVien" class="">
+                <!-- <tr>
+                    <th class="showMaSinhVien" scope="row"></th>
+                    <td class="showTenSinhVien"></td>
+                    <td class="showLoaiSinhVien"></td>
+                    <td class="showDiemTrungBinh"></td>
+                    <td class="showDiemRenLuyen"></td>
+                </tr> -->
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./models/SinhVien.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
